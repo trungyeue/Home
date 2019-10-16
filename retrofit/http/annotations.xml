@@ -1,0 +1,5 @@
+<root>
+    <item name='retrofit.http.GET'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

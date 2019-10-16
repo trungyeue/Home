@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3700B3"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#3700B3">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgadd"
+                    android:src="@drawable/ic_back"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center|center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#F8F7F7"
+                    android:layout_height="match_parent"
+                    android:text="Add"/>
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Name : "
+                android:textColor="#000"
+                android:layout_marginTop="28dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Choose a room : "
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:gravity="center|left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose from date: "
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose go date : "
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:textColor="#000"
+
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kind of room : "
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adults : "
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Children : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="24dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:inputType="text"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/name1"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/room1"
+                    android:gravity="center|left"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:hint="Nhấn chọn"
+
+                    android:id="@+id/fromdate"
+                   />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:hint="Nhấn chọn"
+                    android:id="@+id/godate"
+                    />
+
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:id="@+id/sproom2"
+                    android:inputType="text"
+                    />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:id="@+id/adulst"
+                    android:inputType="text"
+                   />
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:inputType="text"
+                        android:id="@+id/children"
+                        />
+
+
+        </LinearLayout>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Thêm"
+        android:id="@+id/addthem"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+    <Button
+        android:layout_width="wrap_content"
+android:id="@+id/cancel"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listviewad"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
